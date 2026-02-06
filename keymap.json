@@ -33,12 +33,21 @@
     "context": "ProjectPanel",
     "bindings": {
       "escape": "workspace::ToggleLeftDock",
+      "ctrl-alt-cmd-o": "menu::Confirm",
+      "enter": ["workspace::SendKeystrokes", "ctrl-alt-cmd-o escape"],
     },
   },
   {
     "context": "Terminal",
     "bindings": {
       "escape": "workspace::ToggleBottomDock",
+      "ctrl-t": "workspace::NewTerminal",
+    },
+  },
+  {
+    "context": "Editor && left_dock == projectpanel && vim_mode == normal",
+    "bindings": {
+      "escape": "workspace::ToggleLeftDock",
     },
   },
   {
