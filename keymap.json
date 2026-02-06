@@ -26,6 +26,7 @@
       "space e": "project_panel::ToggleFocus",
       "space E": ["workspace::SendKeystrokes", "space e ctrl-alt-cmd-c"],
       "space t": "terminal_panel::ToggleFocus",
+      "space a": "agent::ToggleFocus",
     },
   },
   {
@@ -38,6 +39,12 @@
     "context": "Terminal",
     "bindings": {
       "escape": "workspace::ToggleBottomDock",
+    },
+  },
+  {
+    "context": "AgentPanel > Editor && vim_mode == normal",
+    "bindings": {
+      "escape": "workspace::ToggleRightDock",
     },
   },
   {
