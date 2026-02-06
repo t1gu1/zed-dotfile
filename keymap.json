@@ -10,6 +10,7 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-s": "workspace::Save",
+      "ctrl-alt-cmd-c": "project_panel::CollapseAllEntries",
       // "shift shift": "file_finder::Toggle"
     },
   },
@@ -17,6 +18,19 @@
     "context": "Editor",
     "bindings": {
       "ctrl-a": "editor::SelectAll",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space e": "project_panel::ToggleFocus",
+      "space E": ["workspace::SendKeystrokes", "space e ctrl-alt-cmd-c"],
+    },
+  },
+  {
+    "context": "ProjectPanel || Editor",
+    "bindings": {
+      "escape": "workspace::ToggleLeftDock",
     },
   },
   {

@@ -20,6 +20,9 @@
     "diagnostics": true,
     "metrics": false,
   },
+  "project_panel": {
+    "auto_reveal_entries": true,
+  },
   "session": {
     "trust_all_worktrees": true,
   },
