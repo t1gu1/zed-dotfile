@@ -9,7 +9,14 @@
   {
     "context": "Workspace",
     "bindings": {
+      "ctrl-s": "workspace::Save",
       // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
     },
   },
   {
