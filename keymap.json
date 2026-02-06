@@ -25,12 +25,19 @@
     "bindings": {
       "space e": "project_panel::ToggleFocus",
       "space E": ["workspace::SendKeystrokes", "space e ctrl-alt-cmd-c"],
+      "space t": "terminal_panel::ToggleFocus",
     },
   },
   {
-    "context": "ProjectPanel || Editor",
+    "context": "ProjectPanel",
     "bindings": {
       "escape": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": "workspace::ToggleBottomDock",
     },
   },
   {
