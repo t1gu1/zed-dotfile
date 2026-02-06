@@ -40,6 +40,10 @@
       "cmd-{": "pane::SwapItemLeft",
       "cmd-}": "pane::SwapItemRight",
       "space c": "pane::CloseActiveItem",
+      "ctrl-w": "pane::CloseActiveItem",
+      "cmd-w": "pane::CloseActiveItem",
+      "ctrl-W": ["pane::CloseInactiveItems", { "close_pinned": false }],
+      "cmd-W": ["pane::CloseInactiveItems", { "close_pinned": false }],
       "space C": ["pane::CloseInactiveItems", { "close_pinned": false }],
       "space [": ["pane::CloseItemsToTheLeft", { "close_pinned": false }],
       "space ]": ["pane::CloseItemsToTheRight", { "close_pinned": false }],
@@ -70,22 +74,13 @@
       "shift-j": "editor::MoveLineDown",
       "ctrl-a": "editor::SelectAll",
       "cmd-a": "editor::SelectAll",
+      "ctrl-1": ["pane::ActivateItem", 0],
+      "ctrl-2": ["pane::ActivateItem", 1],
+      "ctrl-3": ["pane::ActivateItem", 2],
+      "ctrl-4": ["pane::ActivateItem", 3],
+      "ctrl-5": ["pane::ActivateItem", 4],
     },
   },
-  {
-    "context": "vim_mode == visual || vim_mode == normal",
-    "bindings": {
-      "space /": ["editor::ToggleComments", { "advance_downwards": false }],
-      "space d /": "buffer_search::Dismiss",
-      "shift-up": "editor::MoveLineUp",
-      "shift-down": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp",
-      "shift-j": "editor::MoveLineDown",
-      "ctrl-a": "editor::SelectAll",
-      "cmd-a": "editor::SelectAll",
-    },
-  },
-
   {
     "context": "Terminal",
     "bindings": {
@@ -126,7 +121,13 @@
     },
   },
   {
-    "context": "ProjectSearchBar",
+    "context": "BufferSearchBar || SearchBar || ProjectSearchBar",
+    "bindings": {
+      "escape": "buffer_search::Dismiss",
+    },
+  },
+  {
+    "context": "BufferSearchBar || SearchBar || ProjectSearchBar",
     "bindings": {
       "escape": "pane::CloseActiveItem",
     },
