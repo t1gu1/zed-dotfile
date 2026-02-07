@@ -8,7 +8,8 @@
 
 ## Extensions
 
-- Icon theme: Soft Charmed Icons
+- Theme: `Catppuccin - Macchiato`
+- Icon theme: `Soft Charmed Icons`
 
 ## AI agent info
 
