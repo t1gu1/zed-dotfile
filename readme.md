@@ -1,4 +1,6 @@
-# Zed Editor 
+# Zed Editor - dotfile
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/f66bc248-4cc4-42e6-ab33-929f1a523504" />
 
 ## How to install
 
