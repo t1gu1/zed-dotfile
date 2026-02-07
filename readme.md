@@ -6,6 +6,10 @@
 - Clone this repository `cp -r ~/.config/zed ~/.config/zed-old &&rm -r ~/.config/zed && git clone git@github.com:t1gu1/zed-dotfile.git ~/.config/zed/`
 - Install fonts in from the `fonts` folder oh this repository
 
+## Extensions
+
+- Icon theme: Soft Charmed Icons
+
 ## AI agent info
 
 We are in a Zed Editor config dotfile and we are editing keymap and settings.
