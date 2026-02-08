@@ -15,7 +15,7 @@
     },
   },
   {
-    "context": "ProjectPanel || vim_mode == normal || EmptyPane && !menu && !Dock && !Editor",
+    "context": "Settings || ProjectPanel || vim_mode == normal || EmptyPane && !menu && !Dock && !Editor || !Editor && !GitPanel && !AssistantPanel && !Terminal && !OutlinePanel && !CollabPanel && !AgentPanel && !ProjectPanel",
     "bindings": {
       "space e": "project_panel::ToggleFocus",
       "space E": ["workspace::SendKeystrokes", "space e ctrl-alt-cmd-c"],
@@ -129,6 +129,14 @@
   {
     "context": "BufferSearchBar || SearchBar || ProjectSearchBar",
     "bindings": {
+      "escape": "pane::CloseActiveItem",
+    },
+  },
+  // When we are in a preview readme or find words
+  {
+    "context": "!Editor && !GitPanel && !AssistantPanel && !Terminal && !OutlinePanel && !CollabPanel && !AgentPanel && !ProjectPanel",
+    "bindings": {
+      "space p": "workspace::ToggleLeftDock",
       "escape": "pane::CloseActiveItem",
     },
   },
